@@ -1,6 +1,6 @@
 from typing import Tuple
 from collections.abc import Iterable, Iterator
-from _psycopg import cursor, connection
+from psycopg2 import cursor, connection
 
 class Composable:
     def __init__(self, wrapped: object) -> None: ...
